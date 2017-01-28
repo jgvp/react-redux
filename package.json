@@ -7,6 +7,7 @@
     "lint": "eslint src"
   },
   "dependencies": {
+    "firebase": "^3.6.7",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
     "react-redux": "^5.0.2",

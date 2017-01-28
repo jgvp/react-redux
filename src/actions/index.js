@@ -1,6 +1,17 @@
 import uuid from 'uuid';
 import Data from '../data/data';
+import * as firebase from 'firebase'
 
+
+const configFirebaseDevelop = {
+    apiKey: "********",
+    authDomain: "******",
+    databaseURL: "*****",
+    storageBucket: "*****",
+    messagingSenderId: "***"
+}
+
+firebase.initializeApp(configFirebaseDevelop);
 
 function fetchList () {
 	return new Promise((resolve, reject) => {
@@ -32,6 +43,13 @@ export const addListAttendees = () => (dispatch) =>  {
 }
 
 export const addAttendee = (name, color) => {
+	const attendee = {
+        id: uuid.v4(),
+        name: name,
+        color: color
+	}
+    firebase.database().ref('/attendees').push(attendee);
+
 	return {
 		type: 'ADD_ATTENDEE',
 		id: uuid.v4(),
