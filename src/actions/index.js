@@ -13,7 +13,7 @@ function fetchList () {
 const receiveList = (attendeeList) => {
 	return {
 		type: 'RECEIVE_LIST',
-		list: attendeeList
+		payload: attendeeList
 	}
 }
 
@@ -34,15 +34,17 @@ export const addListAttendees = () => (dispatch) =>  {
 export const addAttendee = (name, color) => {
 	return {
 		type: 'ADD_ATTENDEE',
-		id: uuid.v4(),
-		name: name,
-		color: color
+		payload: {
+            id: uuid.v4(),
+            name: name,
+            color: color
+		}
 	}
 }
 
-export const removeAttendee = (index) => {
+export const removeAttendee = (id) => {
 	return {
 		type: 'REMOVE_ATTENDEE',
-		index: index
+		id
 	}
 }
