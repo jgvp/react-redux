@@ -4,11 +4,11 @@ import * as firebase from 'firebase'
 
 
 const configFirebaseDevelop = {
-    apiKey: "AIzaSyDdMgLcISr4APnMe6v_tCdvGGUbj3KBxSk",
-    authDomain: "attendees-b5509.firebaseapp.com",
-    databaseURL: "https://attendees-b5509.firebaseio.com",
-    storageBucket: "attendees-b5509.appspot.com",
-    messagingSenderId: "882785827455"
+    apiKey: "********",
+    authDomain: "******",
+    databaseURL: "*****",
+    storageBucket: "*****",
+    messagingSenderId: "***"
 }
 
 firebase.initializeApp(configFirebaseDevelop);
