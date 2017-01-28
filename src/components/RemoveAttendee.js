@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 export default class RemoveAttendee extends Component {
 	handleOnClick() {
-		let index = this.props.index;
+		let id = this.props.id;
 
-		this.props.removeAttendee(index);
+		this.props.removeAttendee(id);
 	}
 	render() {
 		return (
