@@ -2,22 +2,22 @@ import uuid from 'uuid';
 
 export default [{
   	name: 'Charlie Kelly',
-  	color: '#E74C3C',
+  	color: 'white',
   	id: uuid.v4()
   }, {
   	name: 'Mac',
-  	color: '#553285',
+  	color: 'black',
   	id: uuid.v4()
   }, {
   	name: 'Frank Reynolds',
-  	color: '#296AA8',
+  	color: 'blue',
   	id: uuid.v4()
   }, {
   	name: 'Deandra Reynolds',
-  	color: '#202020',
+  	color: 'red',
   	id: uuid.v4()
   }, {
   	name: 'Dennis Reynolds',
-  	color: '#287572',
+  	color: 'green',
   	id: uuid.v4()
   },]
